@@ -33,7 +33,7 @@ class ApiService {
           ...headers,
           ...(options.headers || {})
         },
-        signal: AbortSignal.timeout(4000) // 4 detik timeout
+        signal: AbortSignal.timeout(45000) // 45 detik timeout untuk cold-start server gratis
       });
 
       const data = await response.json().catch(() => null);
