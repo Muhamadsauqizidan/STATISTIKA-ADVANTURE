@@ -1,0 +1,54 @@
+
+/* STATISTIKA ADVENTURE */
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background: #0b1020;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    #818cf8,
+    #c084fc,
+    #22d3ee
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app {
+    width: 100%;
+  }
+}
+
